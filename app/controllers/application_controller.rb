@@ -75,6 +75,7 @@ class ApplicationController < Sinatra::Base
       highscore: params[:highscore]
     )
     user.to_json
+  end
 
   get '/users/:id/recent' do
     user = User.find(params[:id])
